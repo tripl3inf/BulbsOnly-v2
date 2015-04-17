@@ -9,7 +9,7 @@ use Roots\Sage\ConditionalTagCheck;
  */
 add_theme_support('soil-clean-up');         // Enable clean up from Soil
 add_theme_support('soil-relative-urls');    // Enable relative URLs from Soil
-add_theme_support('soil-nice-search');      // Enable nice search from Soil
+add_theme_support('soil-nice-search');      // Enable nice search from Soil -- /?s= to /search/ redirect
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 
@@ -74,3 +74,11 @@ function display_sidebar() {
 if (!isset($content_width)) {
   $content_width = 1140;
 }
+
+
+
+
+
+
+
+

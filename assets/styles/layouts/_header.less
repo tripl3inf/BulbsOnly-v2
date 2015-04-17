@@ -1,8 +1,40 @@
-header.navbar {
-  margin-bottom: 0;
-  border: none;
+header {
 
-  nav {
-    #gradient > .vertical(transparent;#fff;0%;100%);
+  .navbar {
+    .make-row();
+
+    margin-bottom: 0;
+    border: none;
+
+    .navbar-brand > img {
+      width: 280px;
+      top: -25px;
+      position: relative;
+      //left: 20px;
+    }
+
+    nav {
+      #gradient > .vertical(transparent; #fff; 0%; 100%);
+
+      .navbar-nav {
+        float: right;
+        margin-right: 150px;
+
+        li {
+          a {
+            padding-top: 45px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+
+      #badge_specialize {
+        width: 150px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+    }
   }
 }

@@ -9,31 +9,97 @@ html {
     #gradient > .vertical(#fb955e;#ea5507;0%;100%);
 
 
-    .badge-bar {
+    // carousel
+    .carousel {
+      .make-row();
+    }
 
-      //.make-row();
+
+
+    // badge bar
+    .badge-bar {
+      .make-row();
 
       height: 200px;
-      //padding-top: 20px;
+      padding-top: 20px;
       #gradient > .vertical(#fff;transparent;0%;100%);
 
       .badge {
         background: transparent;
         .make-sm-column(4);
+        height: 185px;
+
+        img {
+          //width: 80%;
+        }
+
+        h4 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+        }
+
       }
     }
 
+
+    // brand bar
     .brand-bar {
-      //.make-row();
+      .make-row();
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:after {
+          content: '';
+          width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+          display: inline-block;
+      }
+
+      clear: both;
+      margin-top: 60px;
+      margin-bottom: 0;
+      height: 100px;
 
       .brand {
-       .make-sm-column(2);
+       //.make-sm-column(2);
+        position: relative;
+        height: 100%;
+        display: inline-block;
 
         img {
-          .centered-h();
+//          transform: translate(0, -50%);
+          display: inline-block;
         }
       }
     }
+
+
+    // location panel
+    .location-panel {
+      height: 600px;
+      padding-top: 50px;
+      #gradient > .vertical(transparent;#fff;0%;100%);
+
+      .make-row();
+
+      .editable-content {
+        .make-sm-column(6);
+      }
+
+      .map {
+        .make-sm-column(6);
+
+        > div {
+          overflow: hidden;
+          padding-top: 30px;
+        }
+      }
+
+
+    }
+
 
   }
 }
