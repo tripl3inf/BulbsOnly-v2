@@ -6,23 +6,31 @@ html {
   background-size: cover;
 
   body {
-    #gradient > .vertical(#fb955e;#ea5507;0%;100%);
+    #gradient > .vertical(#ea5507; #fb955e; 0%; 100%);
 
+    background-attachment: fixed;
+
+    section {
+      .make-row();
+
+      h3 {
+        color: @brand-primary;
+        text-shadow: 0px 2px 3px #555;
+        font-size: 28px;
+        text-align: center;
+
+      }
+    }
 
     // carousel
     .carousel {
-      .make-row();
     }
 
-
-
     // badge bar
-    .badge-bar {
-      .make-row();
-
+    #badge-bar {
       height: 200px;
       padding-top: 20px;
-      #gradient > .vertical(#fff;transparent;0%;100%);
+      #gradient > .vertical(#fff; transparent; 0%; 100%);
 
       .badge {
         background: transparent;
@@ -38,23 +46,22 @@ html {
           bottom: 0;
           width: 100%;
           text-align: center;
+          text-shadow: 0px 2px 3px #555;
         }
 
       }
     }
 
-
     // brand bar
-    .brand-bar {
-      .make-row();
+    #brand-bar {
       text-align: justify;
       padding-left: 15px;
       padding-right: 15px;
 
       &:after {
-          content: '';
-          width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-          display: inline-block;
+        content: '';
+        width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+        display: inline-block;
       }
 
       clear: both;
@@ -62,27 +69,25 @@ html {
       margin-bottom: 0;
       height: 100px;
 
-      .brand {
-       //.make-sm-column(2);
+      figure {
+        //.make-sm-column(2);
         position: relative;
         height: 100%;
         display: inline-block;
 
         img {
-//          transform: translate(0, -50%);
+          //          transform: translate(0, -50%);
           display: inline-block;
         }
       }
     }
 
-
     // location panel
-    .location-panel {
+    #location-panel {
+
       height: 600px;
       padding-top: 50px;
-      #gradient > .vertical(transparent;#fff;0%;100%);
-
-      .make-row();
+      #gradient > .vertical(transparent; #fff; 0%; 100%);
 
       .editable-content {
         .make-sm-column(6);
@@ -96,10 +101,20 @@ html {
           padding-top: 30px;
         }
       }
-
-
     }
 
+    // contact panel
+    #contact-panel {
+      background: #fff;
+
+      article {
+        .make-sm-column(6);
+      }
+
+      aside {
+        .make-sm-column(6);
+      }
+    }
 
   }
 }

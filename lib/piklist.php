@@ -14,7 +14,7 @@ function piklist_theme_setting_pages($pages)
   ,'menu_icon' => plugins_url('piklist/parts/img/piklist-icon.png')
   ,'page_icon' => plugins_url('piklist/parts/img/piklist-page-icon-32.png')
   ,'single_line' => true
-  ,'default_tab' => 'Basic'
+  ,'default_tab' => 'Location'
   ,'save_text' => 'Save Settings'
   );
 
